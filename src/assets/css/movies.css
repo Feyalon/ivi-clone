@@ -436,5 +436,35 @@
   display: flex;
 }
 .countryListHeader {
-  width: 550px;
+  width: 600px;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+}
+.countryListHeaderContent {
+  width: 500px;
+  display: flex;
+  overflow: hidden;
+  grid-gap: 20px;
+}
+
+.arrow {
+  border: solid gray;
+  border-width: 0 3px 3px 0;
+  display: inline-flex;
+  height: 20px;
+  width: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
 }

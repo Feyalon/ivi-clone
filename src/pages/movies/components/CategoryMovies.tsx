@@ -338,9 +338,17 @@ const CategoryMovies: React.FC = () => {
                 {openCountry && (
                   <div className="countryListDropdown">
                     <div className="countryListHeader">
-                      {countriesHeaderCol.map((name) => (
-                        <div>{name}</div>
-                      ))}
+                      <p>
+                        <i className="arrow left"></i>
+                      </p>
+                      <div className="countryListHeaderContent">
+                        {countriesHeaderCol.map((name) => (
+                          <div>{name}</div>
+                        ))}
+                      </div>
+                      <p>
+                        <i className="arrow right"></i>
+                      </p>
                     </div>
                   </div>
                 )}

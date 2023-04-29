@@ -1,11 +1,12 @@
 import React from "react";
-import { Cards } from "../../../models/Cards";
+import { Cards } from "../../../models/Movies";
 
 interface Movies {
   Imovies: Cards;
 }
-
 const Card: React.FC<Movies> = ({ Imovies }) => {
+  console.log(Imovies.name);
+
   return (
     <>
       <div
@@ -43,10 +44,17 @@ const Card: React.FC<Movies> = ({ Imovies }) => {
                       <div className="hoard hoard_type_favorite hoard_style_kaera hoard_iconOnly nbl-poster__hoard">
                         <div className="hoard__icon"></div>
                       </div>
-                      <div className="hoard hoard_type_similar hoard_style_kaera hoard_iconOnly nbl-poster__hoard">
+
+                      <div
+                        className="hoard hoard_type_similar hoard_style_kaera hoard_iconOnly nbl-poster__hoard"
+                        style={{ marginTop: "25px" }}
+                      >
                         <div className="hoard__icon"></div>
                       </div>
-                      <div className="hoard hoard_type_rate hoard_style_kaera hoard_iconOnly nbl-poster__hoard">
+                      <div
+                        className="hoard hoard_type_rate hoard_style_kaera hoard_iconOnly nbl-poster__hoard"
+                        style={{ marginTop: "50px" }}
+                      >
                         <div
                           className="nbl-icon nbl-icon_rating_20 hoard__nbl-icon hoard__icon"
                           style={{
@@ -57,7 +65,10 @@ const Card: React.FC<Movies> = ({ Imovies }) => {
                           }}
                         ></div>
                       </div>
-                      <div className="hoard hoard_type_dislike hoard_style_dislike hoard_iconOnly nbl-poster__hoard">
+                      <div
+                        className="hoard hoard_type_dislike hoard_style_dislike hoard_iconOnly nbl-poster__hoard"
+                        style={{ marginTop: "75px" }}
+                      >
                         <div className="hoard__icon"></div>
                       </div>
                     </div>
@@ -135,10 +146,17 @@ const Card: React.FC<Movies> = ({ Imovies }) => {
                 </div>
                 <div className="nbl-slimPosterBlock__extra">
                   <div className="nbl-slimPosterBlock__extraItem">
-                    <span
-                      className="priceBadge"
-                      data-shield-text={Imovies.isPaid}
-                    ></span>
+                    {Imovies.isPaid === "Подписка" ? (
+                      <span className="priceBadge" style={{ color: "red" }}>
+                        {Imovies.isPaid}
+                      </span>
+                    ) : Imovies.isPaid === "Покупка" ? (
+                      <span className="priceBadge" style={{ color: "#00a5ff" }}>
+                        {Imovies.isPaid}
+                      </span>
+                    ) : (
+                      <span className="priceBadge">{Imovies.isPaid}</span>
+                    )}
                   </div>
                 </div>
               </div>

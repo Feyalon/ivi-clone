@@ -1,0 +1,8 @@
+export { default as MovieBreadCrumbsHeader } from './MovieBreadCrumbsHeader'
+export { default as MovieBackgroundContainer } from './MovieBackgroundContainer'
+export { default as MovieMainSection } from './MovieMainSection/index'
+export { default as MovieCompilation } from './MovieCompilation'
+export { default as MovieCreators } from './MovieCreators/index'
+export { default as MovieAdditional } from './movie-additionals/MovieAdditional'
+export { default as MovieReviews } from './movie-reviews/index'
+export { default as MovieAllDevice } from './MovieAllDevice'

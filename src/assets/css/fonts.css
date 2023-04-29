@@ -1,0 +1,46 @@
+@font-face {
+    font-family: iconfont;
+    font-weight: 400;
+    font-style: normal;
+    src: url(https://ds-parent.dfs.ivi.ru/22.12.02/icon/_fonts/iconfont.woff) format('woff'), url(https://ds-parent.dfs.ivi.ru/22.12.02/icon/_fonts/iconfont.ttf) format('truetype'), local('☺')
+}
+
+@font-face {
+    font-family: iviSans;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url(https://ds-parent.dfs.ivi.ru/22.12.02/fonts/iviSans-Regular.woff2) format('woff2'), url(https://ds-parent.dfs.ivi.ru/22.12.02/fonts/iviSans-Regular.woff) format('woff'), url(https://ds-parent.dfs.ivi.ru/22.12.02/fonts/iviSans-Regular.otf) format('opentype'), url(https://ds-parent.dfs.ivi.ru/22.12.02/fonts/iviSans-Regular.ttf) format('truetype'), local('☺')
+}
+
+@font-face {
+    font-family: iviSans;
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: url(https://ds-parent.dfs.ivi.ru/22.12.02/fonts/iviSans-Medium.woff2) format('woff2'), url(https://ds-parent.dfs.ivi.ru/22.12.02/fonts/iviSans-Medium.woff) format('woff'), url(https://ds-parent.dfs.ivi.ru/22.12.02/fonts/iviSans-Medium.otf) format('opentype'), url(https://ds-parent.dfs.ivi.ru/22.12.02/fonts/iviSans-Medium.ttf) format('truetype'), local('☺')
+}
+
+@font-face {
+    font-family: iviSans;
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url(https://ds-parent.dfs.ivi.ru/22.12.02/fonts/iviSans-Bold.woff2) format('woff2'), url(https://ds-parent.dfs.ivi.ru/22.12.02/fonts/iviSans-Bold.woff) format('woff'), url(https://ds-parent.dfs.ivi.ru/22.12.02/fonts/iviSans-Bold.otf) format('opentype'), url(https://ds-parent.dfs.ivi.ru/22.12.02/fonts/iviSans-Bold.ttf) format('truetype'), local('☺')
+}
+
+@font-face {
+    font-family: iviSans;
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+    src: url(https://ds-parent.dfs.ivi.ru/22.12.02/fonts/iviSans-Black.woff2) format('woff2'), url(https://ds-parent.dfs.ivi.ru/22.12.02/fonts/iviSans-Black.woff) format('woff'), url(https://ds-parent.dfs.ivi.ru/22.12.02/fonts/iviSans-Black.otf) format('opentype'), url(https://ds-parent.dfs.ivi.ru/22.12.02/fonts/iviSans-Black.ttf) format('truetype'), local('☺')
+}
+
+@font-face {
+    font-family: ivi-icons;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url(../fonts/ivi-icons.woff?ver=4d5445fa74bd9cfa8a20d4457978fff5) format('woff'), url(../fonts/ivi-icons.ttf?ver=01c17e9e19e708171d9af9a37213bdfe) format('truetype'), local('☺')
+}

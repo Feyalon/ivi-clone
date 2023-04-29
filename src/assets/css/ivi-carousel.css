@@ -1,0 +1,71 @@
+.ivi-carousel {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.ivi-carousel-viewport {
+    display: block;
+    width: 100%
+}
+
+.ivi-carousel-container {
+    overflow-x: scroll;
+    margin-top: -24px;
+    margin-bottom: -24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none
+}
+
+.ivi-carousel-container .gallery__item {
+    margin-bottom: 0
+}
+
+body:not(.touch) .ivi-carousel-container {
+    margin-left: -12px;
+    margin-right: -12px;
+    padding-left: 12px;
+    padding-right: 12px
+}
+
+body.touch .ivi-carousel-container {
+    margin-left: -1000px;
+    margin-right: -1000px;
+    padding-left: 1000px;
+    padding-right: 1000px
+}
+
+body.touch .ivi-carousel-container.isFirefoxMobileBrowser {
+    margin-left: -12px;
+    margin-right: -12px;
+    padding-left: 12px;
+    padding-right: 12px
+}
+
+.ivi-carousel__promoMod .ivi-carousel-container {
+    -ms-touch-action: pan-y;
+    touch-action: pan-y
+}
+
+.ivi-carousel .shield-image {
+    display: block
+}
+
+.ivi-carousel-container::-webkit-scrollbar {
+    display: none
+}
+
+.ivi-carousel-item {
+    display: inline-block;
+    vertical-align: top;
+    white-space: initial
+}
+
+.ivi-carousel-item:not(.isActive) .promoSlider__bgImage[data-stub=true] {
+    width: 100%
+}

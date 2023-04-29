@@ -120,6 +120,11 @@ const CategoryMovies: React.FC = () => {
               >
                 <div className="genreMoviesContent">
                   <p>Жанры</p>
+                  {actived ? (
+                    <span className="arrow arrow-top"></span>
+                  ) : (
+                    <span className="arrow arrow-bottom"></span>
+                  )}
                 </div>
                 {openGenre && (
                   <div className="genreDropDown">
